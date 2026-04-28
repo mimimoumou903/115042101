@@ -129,7 +129,47 @@ h2 {
 
 
 
+/* 電腦版：左文字右地圖 */
+.store-info-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
 
+.store-info-text,
+.store-info-map {
+  width: 50%;
+}
+
+.store-info-map iframe {
+  width: 100%;
+  height: 330px;
+  border: 0;
+}
+
+/* 手機版：文字在上，地圖在下 */
+@media screen and (max-width: 768px) {
+  .store-info-wrap {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .store-info-text,
+  .store-info-map {
+    width: 100%;
+  }
+
+  .store-info-map {
+    display: block !important;
+  }
+
+  .store-info-map iframe {
+    display: block !important;
+    width: 100%;
+    height: 280px;
+  }
+}
 
 
 .container1 {
