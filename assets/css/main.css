@@ -325,7 +325,9 @@ h2 {
 
 /* 文字優化（你剛剛那段太鬆） */
 .story-text {
-  line-height: 1.7;
+    line-height: 1.7;
+    text-align: left;
+    font-size: 90%;
 }
 
 .story-text p {
@@ -402,7 +404,7 @@ h2 {
   }
 
   .intro-text {
-    text-align: center;
+    text-align: left;
   }
 
   .intro-image {
