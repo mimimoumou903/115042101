@@ -51,12 +51,7 @@ h2 {
   gap: 40px;
 }
 
-.intro-text{
-    width: 50%;
-    font-size: 110%;
-    text-align: left;
-}
-
+.intro-text,
 .intro-image {
   width: 50%;   /* 重點：各佔一半 */
 }
@@ -83,7 +78,7 @@ h2 {
   }
 
   .intro-text {
-    text-align: left;
+    text-align: center;
   }
 
   .intro-image {
@@ -129,47 +124,7 @@ h2 {
 
 
 
-/* 電腦版：左文字右地圖 */
-.store-info-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-}
 
-.store-info-text,
-.store-info-map {
-  width: 50%;
-}
-
-.store-info-map iframe {
-  width: 100%;
-  height: 330px;
-  border: 0;
-}
-
-/* 手機版：文字在上，地圖在下 */
-@media screen and (max-width: 768px) {
-  .store-info-wrap {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .store-info-text,
-  .store-info-map {
-    width: 100%;
-  }
-
-  .store-info-map {
-    display: block !important;
-  }
-
-  .store-info-map iframe {
-    display: block !important;
-    width: 100%;
-    height: 280px;
-  }
-}
 
 
 .container1 {
@@ -348,63 +303,6 @@ h2 {
 }
 
 
-/* ⭐ 桌機：左右各一半 */
-.story-section {
-  display: flex;
-  align-items: flex-start;
-  gap: 50px;
-}
-
-.story-text{
-    width: 50%;
-    font-size: 90%;
-}
-.story-image {
-  width: 50%;
-}
-
-/* 文字優化（你剛剛那段太鬆） */
-.story-text {
-    line-height: 1.7;
-    text-align: left;
-    font-size: 90%;
-}
-
-.story-text p {
-  margin-bottom: 12px;
-}
-
-/* 圖片 */
-.story-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  display: block;
-}
-
-/* ⭐ 手機：上下排 */
-@media screen and (max-width: 768px) {
-
-  .story-section {
-    flex-direction: column;
-  }
-
-  .story-text,
-  .story-image {
-    width: 100%;
-  }
-
-  .story-image {
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  .story-image img {
-    width: 85%;
-    max-width: 300px;
-  }
-}
-
 /* ⭐ 桌機版：左右各一半 */
 .intro-section {
   display: flex;
@@ -412,14 +310,10 @@ h2 {
   gap: 40px;
 }
 
-.intro-text{
-    width: 50%;
-    font-size: 110%;
-    text-align: left;
-}
-
+.intro-text,
 .intro-image {
-  width: 50%;   /* 重點：各佔一半 */
+    width: 50%;   /* 重點：各佔一半 */
+    font-size: 100%;
 }
 
 /* 圖片設定 */
@@ -436,7 +330,6 @@ h2 {
     flex-direction: column;
     align-items: center;
   }
-
 
   .intro-text,
   .intro-image {
@@ -457,24 +350,14 @@ h2 {
     max-width: 260px;
   }
 }
-.intro-image {
-  width: 50%;
-  text-align: center; /* 讓圖片下方文字置中 */
-}
-
-.intro-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
 
 
 
-.intro-image p {
-  text-align: center;
-  margin-top: 12px;
-}
+
+
+
+
+
 
 /* ⭐ 桌機版：左右排 */
 .info-section {
@@ -482,24 +365,7 @@ h2 {
   align-items: flex-start;
   gap: 40px;
 }
-.info-text {
-    line-height: 1.6;
-    letter-spacing: 0.5px;
-    padding-left: 10%;
-    padding-top: 28px;
-    text-align: left;
-}
 
-.info-text h3 {
-    margin-top: 20px;
-    margin-bottom: 8px;
-    text-align: center;
-}
-
-.info-text p {
-    margin: 4px 0;
-    text-align: center;
-}
 .info-text,
 .info-map {
   width: 50%;
@@ -533,8 +399,6 @@ h2 {
     height: 300px; /* 手機稍微矮一點 */
   }
 }
-
-
 
 
 
